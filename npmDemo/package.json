@@ -1,0 +1,15 @@
+{
+  "name": "demo-for-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "time-stamp": "^2.2.0"
+  }
+}
