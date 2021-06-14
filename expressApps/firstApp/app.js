@@ -6,6 +6,10 @@ app.get("/", function(req,res){
     res.send("Hello There!");
 })
 
+app.get("/colors", function(req,res){
+    res.send("Red, Yellow, Blue");
+})
+
 app.get("/dog", function(req,res){
     res.send("Hello There Woof!");
 })
