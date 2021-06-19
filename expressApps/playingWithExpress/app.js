@@ -5,13 +5,17 @@ app.get("/", function(req,res){
     res.send("Hi there, welcome to my exercises!");
 })
 
-app.get("/speak/pig", function(req,res){
-    res.send("The pig says oink!");
+app.get("/speak/:animal", function(req,res){
+    var sounds = {
+        pig: "Oink!",
+        cow: "Moo!",
+        dog: "Woof!"
+    }
+    var animal = req.params.animal.toLowerCase();
+    var sound = sounds[animal];
+    res.send("The " + animal + " says " + sound);
 })
 
-app.get("/speak/cow", function(req,res){
-    res.send("The cow says moo!");
-})
 
 app.get("/repeat/:word/:num", function(req, res) {
     var word = req.params.word;
