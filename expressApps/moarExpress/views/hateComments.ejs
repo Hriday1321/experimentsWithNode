@@ -1,5 +1,8 @@
+<%- include('./partials/header.ejs') %> 
 <h1>Some hate comments people have to deal with</h1>
 
 <% comments.forEach(function(comment){ %>
     <li> <%= comment.content %> - <%= comment.author %> </li>
 <% }) %>
+
+<%- include('./partials/footer.ejs') %>
