@@ -1,0 +1,10 @@
+<h1>FOOD: <br></h1>
+
+<% food.forEach(function(foods){ %>
+    <li><%= foods %></li>
+<% }) %>
+
+<form action="/addfood" method="POST">
+    <input type="text" name="nFood" placeholder="addfood">
+    <button>make food</button>
+</form>
